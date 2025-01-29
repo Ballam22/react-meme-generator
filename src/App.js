@@ -5,7 +5,7 @@ export default function MemeGenerator() {
   const [bottomText, setBottomText] = useState('');
   const [template, setTemplate] = useState('doge');
 
-  const memeUrl = `https://api.memegen.link/images/${template}/${encodeURIComponent(topText)}/${encodeURIComponent(bottomText)}.png`;
+  const memeUrl = `https://api.memegen.link/images/${template}/${encodeURIComponent(topText)}/${encodeURIComponent(bottomText)}.jpg`;
 
   const handleDownload = () => {
     const link = document.createElement('a');
